@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    width: fit-content;
+    max-width: 100%;
+    height: 55vw;
+    background: linear-gradient(
+      to right,
+      #E6DACE 0%,
+      #E6DACE 40%,
+      white 40%,
+      white 100%
+    );
+    position: relative;
+}
+
+main{
+    width: 100vw;
+    max-width: 100%;
+}
+
+#blue{
+    width: 19px; 
+    height: 19px; 
+    background-color: blue;
+    float:left;
+    margin: 7px;
+    margin-right: 10px;
+}
+
+a{
+    color: black;
+    margin: 10px;
+    font-size: 14px;
+}
+
+a.active{
+    color: #0050FF;
+}
+
+a:link { 
+    text-decoration: none; 
+}
+
+a:visited { 
+    text-decoration: none; 
+}
+
+a:hover { 
+    color: blue 
+}
+
+nav .active{
+    color: #0050FF;
+}
+
+.topBar{
+    width: 100vw;
+    max-width: 100%;
+    height: 35px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 10px 20px 0px rgb(193, 191, 191);
+    position: fixed;
+}
+
+#slash{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+span{
+    font-size: 18px;
+}
+
+#spanTopName{
+    font-size: 28px;
+    font-weight: 900;
+}
+
+#spanOccupation{
+    margin-right: 60vw;
+    font-weight: 300;
+}
+
+.mainCard{
+    height: 530px;
+    width: 375px;
+    margin-top: 280px;
+    margin-left: 500px;
+    background-color: #F4ECE6;
+    box-shadow: 0px 10px 20px 0px rgb(158, 156, 156);
+    overflow:hidden;
+    float:left
+}
+
+.mainCardPicture{
+    width: fit-content;
+    margin:auto;
+    margin-top: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+ 
+.cover {
+    object-fit: cover;
+}
+
+.mainCardTopSpace{
+    height: 20px;
+    width: max-content;
+    margin: auto;
+}
+
+#mainCardName{
+    font-size: 28px;
+    font-weight: 900;
+    width:fit-content;
+    margin: auto;
+    margin-top: 25px;
+}
+
+#mainCardSurname{
+    font-size: 28px;
+    font-weight: 900;
+    width:fit-content;
+    margin: auto;
+}
+
+#mainCardBlueLine{
+    width: 50px;
+    height: 2px;
+    background-color: #0050FF;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#mainCardOccupation{
+    width: fit-content;
+    margin: auto;
+    margin-top: 35px;
+    letter-spacing: 4px;
+}
+  
+.mainCardBottomSpace{
+    display: flex;
+    background-color: white;
+    width:auto;
+    height: 50px;
+    margin-top: 40px;
+    justify-content: space-evenly;
+}
+
+.mainCardBottomSpace a{
+    width: 25px;
+    height: 25px;
+}
+
+.mainText h1{
+    font-size: 120px;
+    font-weight: 900;
+}
+
+.mainText{
+    float: left;
+    width: max-content;
+    margin: auto;
+    margin-left: 40px;
+    margin-top: 260px;
+}
+
+.mainText a{
+    display: inline-block;
+    padding: 7px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 40px;
+    border: solid 1px black;
+    border-radius:20px;
+}
+
+.activeMainTextAnchor{
+    background-color: #0050FF;
+    color: white;
+}
+
+.mainText a:hover{
+    background-color: #0050FF;
+    color: white;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    max-width: 100%;
+    height: 70px;
+    background-color: white;
+    box-shadow: 0px 10px 20px 0px rgb(158, 156, 156);
+}
+
+.contactContainer{
+    height: max-content;
+    margin: 0rem 3rem;
+    float: right;
+}
+
+.contactText{
+    width: max-content;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contactInfo{
+    font-weight: 300;
+}

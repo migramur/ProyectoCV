@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    height: 180vw;
+    max-height: 180vw;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    width: 100vw;
+    max-width: 100%;
+    height: 220vw;
+    max-height: 220vw;
+    background-color: #E6DACE;
+    position: relative;
+}
+
+
+#blue{
+    width: 19px; 
+    height: 19px; 
+    background-color: blue;
+    float:left;
+    margin: 7px;
+    margin-right: 10px;
+}
+
+a{
+    color: black;
+    margin: 10px;
+    font-size: 14px;
+}
+
+a.active{
+    color: #0050FF;
+}
+
+a:link { 
+    text-decoration: none; 
+}
+
+a:visited { 
+    text-decoration: none; 
+}
+
+a:hover { 
+    color: blue 
+}
+
+nav .active{
+    color: #0050FF;
+}
+
+.topBar{
+    width: 100vw;
+    max-width: 100%;
+    height: 35px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 10px 20px 0px rgb(193, 191, 191);
+    position: fixed;
+    top: 0;
+}
+
+#slash{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+span{
+    font-size: 18px;
+}
+
+#spanTopName{
+    font-size: 28px;
+    font-weight: 900;
+}
+
+#spanOccupation{
+    margin-right: 60vw;
+    font-weight: 300;
+}
+
+#blueSquare{
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    background-color: blue;
+    margin-right: 0.2em;
+    margin-bottom: 0.1rem;
+}
+
+header{
+    font-size: 40px;
+    font-weight: 700;
+    width: fit-content;
+    margin: auto;
+    margin-top: 12rem;
+    margin-bottom: 6rem;
+}
+
+.mainBox{
+    width: 40vw;
+    height: 180vw;
+    margin: auto;
+}
+
+.container{
+    width: 39vw;
+    height:18vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 2rem;
+    box-shadow: 0px 10px 20px 0px rgb(193, 191, 191);
+    position: relative;
+    z-index: -1;
+}
+
+.containerInfo{
+    display: inline-block;
+    width: 16vw;
+    height: 14vw;
+    padding-left: 2.5rem;
+    padding-top: 4rem;
+    font-weight: 600;
+    position:absolute;
+    top:0
+    
+}
+
+.containerFecha{
+    font-size: 25px;
+    color: blue;
+    margin-bottom: 0.7rem;
+}
+
+.containerPuesto{
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.containerEmpresa{
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+.containerParagraph{
+    display:inline-block;
+    width: 20vw;
+    max-width: 20vw;
+    height: fit-content;
+    position: absolute;
+    right: 0;
+    margin-block: 5%;
+    padding: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.cvBox{
+    margin-top: 8rem;
+}
+
+.containerExtra{
+    width: 39vw;
+    height:23vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 6rem;
+    box-shadow: 0px 10px 20px 0px rgb(193, 191, 191);
+    position: relative;
+    z-index: -1;
+    font-weight: 300;
+}
+
+.containerSkills{
+    width: 39vw;
+    height: 11vw;
+    border: 1px solid white;
+}
+
+.containerExtra h1{
+    margin-left: 2rem;
+    margin-top: 4rem;
+}
+
+.blueSquare{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-left: 2rem;
+    margin-right: 0.5rem;
+    background-color: blue;
+}
+
+.containerSkills span{
+    display: inline-block;
+}
+
+li{
+    list-style: none;
+    margin-top: 2rem;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    max-width: 100%;
+    height: 70px;
+    background-color: white;
+    box-shadow: 0px 10px 20px 0px rgb(158, 156, 156);
+}
+
+.contactContainer{
+    height: max-content;
+    margin: 0rem 3rem;
+    float: right;
+}
+
+.contactText{
+    width: max-content;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contactInfo{
+    font-weight: 300;
+}
