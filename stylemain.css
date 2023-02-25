@@ -1,13 +1,15 @@
-* {
+*{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
     font-family: "Roboto", sans-serif;
-    width: fit-content;
-    max-width: 100%;
-    height: 55vw;
     background: linear-gradient(
       to right,
       #E6DACE 0%,
@@ -15,207 +17,413 @@ body{
       white 40%,
       white 100%
     );
-    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
 }
 
 main{
-    width: 100vw;
-    max-width: 100%;
-}
-
-#blue{
-    width: 19px; 
-    height: 19px; 
-    background-color: blue;
-    float:left;
-    margin: 7px;
-    margin-right: 10px;
-}
-
-a{
-    color: black;
-    margin: 10px;
-    font-size: 14px;
-}
-
-a.active{
-    color: #0050FF;
-}
-
-a:link { 
-    text-decoration: none; 
-}
-
-a:visited { 
-    text-decoration: none; 
-}
-
-a:hover { 
-    color: blue 
-}
-
-nav .active{
-    color: #0050FF;
+    flex-grow: 1;
 }
 
 .topBar{
     width: 100vw;
     max-width: 100%;
-    height: 35px;
-    padding: 30px;
+    height: 6rem;
     background-color: white;
-    box-shadow: 0px 10px 20px 0px rgb(193, 191, 191);
     position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 2px 0px rgb(193, 191, 191);
+    z-index: 1;
 }
 
-#slash{
-    margin-left: 15px;
-    margin-right: 15px;
+.topBarName{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
 }
 
-span{
-    font-size: 18px;
+.blueSquare{
+    width: 20px; 
+    height: 20px; 
+    background-color: dodgerblue;
+    margin-right: 1rem;
 }
 
-#spanTopName{
-    font-size: 28px;
+.topBarNameMessiAnchor{
+    text-decoration: none;
+    font-size: 2rem; 
     font-weight: 900;
+    color: black;
 }
 
-#spanOccupation{
-    margin-right: 60vw;
+.topBarNameJugadorAnchor{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
     font-weight: 300;
+}
+
+.topBarDash{
+    margin-left: 0.8rem;
+    margin-right: 0.6rem;
+}
+
+.topBarNav{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.topBarNavActiveAnchor{
+    color: dodgerblue;
+    margin-right: 2rem;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.topBarNavHoverAnchor{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+
+.topBarNav a:hover{
+    color:dodgerblue
+}
+
+.mainContainer{
+    min-height: 50vw;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainInfo{
+    min-height: 530px;
+    min-width: 850px;
+    display: flex;
+    margin-top: 10rem;
+    justify-content:space-around;
 }
 
 .mainCard{
     height: 530px;
     width: 375px;
-    margin-top: 280px;
-    margin-left: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
     background-color: #F4ECE6;
-    box-shadow: 0px 10px 20px 0px rgb(158, 156, 156);
-    overflow:hidden;
-    float:left
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 10px 20px 0px rgb(193, 191, 191);
 }
 
 .mainCardPicture{
-    width: fit-content;
-    margin:auto;
-    margin-top: 40px;
-    border-radius: 100%;
-    overflow: hidden;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    padding-top: 2rem ;
 }
- 
-.cover {
+
+.mainCardPicture img{
+    width: 205px; 
+    height: 205px;
+    border-radius: 50%;
     object-fit: cover;
 }
 
-.mainCardTopSpace{
-    height: 20px;
-    width: max-content;
-    margin: auto;
+.mainCardFullName{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-#mainCardName{
+.mainCard p{
     font-size: 28px;
     font-weight: 900;
-    width:fit-content;
-    margin: auto;
-    margin-top: 25px;
 }
 
-#mainCardSurname{
-    font-size: 28px;
-    font-weight: 900;
-    width:fit-content;
-    margin: auto;
-}
-
-#mainCardBlueLine{
+.mainCardBlueLine{
     width: 50px;
     height: 2px;
-    background-color: #0050FF;
-    margin: auto;
-    margin-top: 20px;
+    background-color: dodgerblue;
 }
 
-#mainCardOccupation{
-    width: fit-content;
-    margin: auto;
-    margin-top: 35px;
+.mainCardOccupation{
+    font-weight:300; 
     letter-spacing: 4px;
 }
-  
+
 .mainCardBottomSpace{
+    width: auto;
+    min-width: 375px;
     display: flex;
-    background-color: white;
-    width:auto;
+    position: absolute;
+    bottom: 0;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
     height: 50px;
-    margin-top: 40px;
-    justify-content: space-evenly;
+    background-color: white;
 }
-
-.mainCardBottomSpace a{
-    width: 25px;
-    height: 25px;
-}
-
-.mainText h1{
-    font-size: 120px;
-    font-weight: 900;
-}
-
+   
 .mainText{
-    float: left;
-    width: max-content;
-    margin: auto;
-    margin-left: 40px;
-    margin-top: 260px;
+    height: 530px;
+    width:  420px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    gap:1rem;
 }
 
-.mainText a{
-    display: inline-block;
-    padding: 7px;
+
+
+.mainTextLeftAnchor{
+    margin-right: 0.8rem;
+    background-color: dodgerblue;
+    color: white;
+    border: 2px solid dodgerblue;
+    text-decoration: none;
+    padding: 8px;
     padding-left: 25px;
     padding-right: 25px;
-    margin-top: 40px;
-    border: solid 1px black;
-    border-radius:20px;
+    border-radius: 20px;
 }
 
-.activeMainTextAnchor{
-    background-color: #0050FF;
-    color: white;
+.mainTextLeftAnchor:hover{
+    background-color: transparent;
+    color:dodgerblue;
+    border: 2px solid dodgerblue;
 }
 
-.mainText a:hover{
-    background-color: #0050FF;
+.mainTextRightAnchor{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 20px;
+}
+
+.mainTextRightAnchor:hover{
+    background-color: dodgerblue;
     color: white;
+    border: 2px solid dodgerblue;
+}
+
+.mainTextAnchors{
+    width: 400px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.mainText p{
+    width: 400px; 
+    font-weight:300; 
+    margin-top: 30px; 
+    letter-spacing: 2px;
 }
 
 footer{
-    position: absolute;
-    bottom: 0;
     width: 100vw;
     max-width: 100%;
-    height: 70px;
+    min-height: 6rem;
+    position: relative;
+    bottom: 0;
+    display: flex;
     background-color: white;
-    box-shadow: 0px 10px 20px 0px rgb(158, 156, 156);
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 1px 0px 2px 0px rgb(193, 191, 191);
 }
 
 .contactContainer{
-    height: max-content;
-    margin: 0rem 3rem;
-    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 100%;
 }
 
 .contactText{
-    width: max-content;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 1rem;
 }
 
 .contactInfo{
     font-weight: 300;
+}
+
+.contactInfo a{
+    text-decoration: none;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    gap:0.5rem
+}
+
+.contactImages{
+    height: 20px;
+    width: 20px;
+    object-fit:cover;
+}
+
+figure{
+    display: inline-block;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    background-color: transparent;
+}
+
+img{
+    object-fit: cover;
+    background-color: transparent;
+}
+
+/* 
+
+DARK MODE
+
+*/
+
+.dark-mode-body{
+    background: linear-gradient(
+      to right,
+      #17212B 0%,
+      #17212B 40%,
+      #0E1621 40%,
+      #0E1621    100%
+    );
+    box-shadow: 0px 1px 1px hsla(0, 0%, 2%, 0.217);
+}
+
+.dark-mode-topBar{
+    background-color: #1F2936;
+    box-shadow: 0px 1px 1px hsla(0, 0%, 2%, 0.217);
+}
+
+
+.dark-mode-blueSquare{ 
+    background-color: #1e6f65;
+}
+
+.dark-mode-topBarNameMessiAnchor{
+    color: white;
+}
+
+.dark-mode-topBarNameJugadorAnchor{
+    color: white;
+}
+
+.dark-mode-hoverAnchor{
+    color: white;
+}
+
+.dark-mode-activeAnchor{
+    color:#1e6f65
+}
+
+.dark-mode-topBarNav a:hover{
+    color: #1e6f65
+}
+
+.dark-mode-topBarDash{
+    color:white
+}
+
+.dark-mode-mainCard{
+    background-color: #2b3643;
+    box-shadow: 0px 1px 1px hsla(0, 0%, 2%, 0.217);
+}
+
+.dark-mode-mainCardFullName{
+    color: rgb(245, 245, 245);
+    text-shadow: 0px 1px 1px hsla(0, 0%, 2%, 0.217);
+}
+
+.dark-mode-mainCardBlueLine{
+    background-color: #1e6f65;
+}
+
+.dark-mode-mainCardOccupation{
+    color:white;
+}
+
+.dark-mode-mainCardBottomSpace{
+    background-color: #7a8e8c;
+}
+
+.dark-mode-mainText{
+    color: white;
+    text-shadow: 0px 1px 2px #2831303f;
+}
+
+.dark-mode-mainTextLeftAnchor{
+    background-color: #1e6f65;
+    color: white;
+    border: 2px solid #1e6f65;
+}
+
+.dark-mode-mainTextLeftAnchor:hover{
+    background-color: transparent;
+    color:#1e6f65;
+    border: 2px solid #1e6f65;
+}
+
+.dark-mode-mainTextRightAnchor{
+    background-color: transparent;
+    color:#1e6f65;
+    border: 2px solid #1e6f65;
+}
+
+.dark-mode-mainTextRightAnchor:hover{
+    background-color: #1e6f65;
+    color: white;
+    border: 2px solid #1e6f65;
+}
+
+.dark-mode-footer{
+    background-color: #1F2936;
+    box-shadow: 1px 0px 2px 0px rgb(193, 191, 191)
+}
+
+.dark-mode-contactContainer{
+    background-color: #1F2936;
+}
+
+.dark-mode-contactContainer p{
+    color:white
+}
+
+.dark-mode-contactText{
+    color:white
+}
+
+.dark-mode-contactInfo{
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
 }
