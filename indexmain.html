@@ -4,58 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae</title>
     <link rel="stylesheet" href="stylemain.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+    <title>Curriculum Vitae</title>
 </head>
 <body>
-    <main>
-        <nav class="topBar">
-        <div id="blue"></div>
-        <span id="spanTopName">Lionel Messi</span>
-        <span id="slash">/</span>
-        <span id="spanOccupation">Jugador de fútbol</span>
-        <a class="active" href="http://127.0.0.1:5500/CV/indexmain.html">SOBRE MÍ</a>
-        <a href="http://127.0.0.1:5500/CV/indexcv.html">CURRÍCULUM</a>
+        <nav id="topBar" class="topBar">
+            <div class="topBarName">
+                <div id="blueSquare" class="blueSquare"></div>
+                <a id="topBarNameMessiAnchor" class="topBarNameMessiAnchor" href="#top">Lionel Messi</a>
+                <span id="topBarDash" class="topBarDash">/</span>
+                <a id="topBarNameJugadorAnchor" class="topBarNameJugadorAnchor" href="#top">Jugador de Fútbol</a>
+            </div>
+            <div id="topBarNav" class="topBarNav">
+                <ul>
+                    <a id="activeAnchor" class="topBarNavActiveAnchor" href="#top">SOBRE MÍ</a>
+                    <a id="hoverAnchor" class="topBarNavHoverAnchor" href="http://127.0.0.1:5500/CV2/indexcv.html">CURRÍCULUM</a>
+                </ul>
+            </div>
         </nav>
-
-        <div class="mainInfo">
-            <div class="mainCard">
-                <div class="mainCardTopSpace"></div>
-                <div class="mainCardPicture">
-                    <img style= "width: 205px; height: 205px" class="cover" src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/EFDNZZ7FEEPSQNE4ATMVMKGXBE.jpg">
+        <p id="top"></p>
+        <main>
+            <figure>
+                <img id="dark-mode-button" class="button" width="35" height="35" src="https://cdn.discordapp.com/attachments/976718154111778846/1072292068963123220/Imagen2.png" onclick="myFunction();changeImage()"></img>
+            </figure>
+            <section class="mainContainer">
+                <div id="mainInfo" class="mainInfo">
+                    <div id="mainCard" class="mainCard">
+                        <div id="mainCardPicture" class="mainCardPicture">
+                            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/EFDNZZ7FEEPSQNE4ATMVMKGXBE.jpg">
+                        </div>
+                            <div id="mainCardFullName" class="mainCardFullName">
+                                <p> Lionel Andrés</p>
+                                <p>Messi Cuccittini</p>
+                            </div>
+                        <div id="mainCardBlueLine" class="mainCardBlueLine"></div>
+                        <span id="mainCardOccupation" class="mainCardOccupation">JUGADOR DE FÚTBOL</span>
+                        <div id="mainCardBottomSpace" class="mainCardBottomSpace">
+                            <a href="https://www.facebook.com/leomessi"><img alt="Facebook" src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0fdef751204647a3bbd7eaa2827ed4f9.png"></a>
+                            <a href="https://twitter.com/TeamMessi"><img alt= "Twitter" src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c7d035ba85f6486680c2facedecdcf4d.png"></a>
+                            <a href="https://ar.linkedin.com/in/lionel-messi-8300b313a?original_referer=https%3A%2F%2Fwww.google.com%2F"><img alt= "LinkedIn" src="https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6ea5b4a88f0b4f91945b40499aa0af00.png"></a>
+                            <a href="https://www.instagram.com/leomessi/"><img alt= "Instagram" src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01c3aff52f2a4dffa526d7a9843d46ea.png"></a>
+                        </div>
+                    </div>
+                    <div id="mainText" class="mainText">
+                            <h1 style="font-size: 100px;font-weight: 900;">Hola</h1>
+                            <h1 style="font-weight:500">Esto es lo que soy y lo que hago</h1>
+                            <div id="mainTextAnchors" class="mainTextAnchors">
+                                <a id="mainTextLeftAnchor" class="mainTextLeftAnchor" href="#top" alt="Curriculum Button">SOBRE MÍ</a>
+                                <a id="mainTextRightAnchor" class="mainTextRightAnchor" href="http://127.0.0.1:5500/CV2/indexcv.html" alt="Proyectos Button">CURRICULUM</a>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor neque vitae nisi ultrices consectetur. Praesent congue, enim vehicula dignissim mattis, risus enim auctor tellus, non pretium ligula quam vel ante. Sed pellentesque mollis felis, non sollicitudin tellus luctus sed. Praesent consectetur congue vulputate. In in vestibulum augue. Integer quis molestie felis. Donec ut dapibus nunc. Cras tristique diam eget lectus vehicula rhoncus. Donec at iaculis mauris. Suspendisse augue ex, finibus vitae mattis ac, pellentesque at tortor. </p>
+                    </div>
                 </div>
-                <p id="mainCardName">Lionel Andrés</p>
-                <p id="mainCardSurname">Messi Cuccittini</p>
-                <div id="mainCardBlueLine"></div>
-                <p id="mainCardOccupation">Jugador de Fútbol</p>
-                <div class="mainCardBottomSpace">
+            </section>
+        </main>
+        <footer id="footer">
+            <div id="contactContainer1" class="contactContainer">
+                <p class="contactText">Contacto</p>
+                <p id="contactInfo1" class="contactInfo">932055648</p>
+            </div>
+            <div id="contactContainer2" class="contactContainer">
+                <p class="contactText">Email</p>
+                <p class="contactInfo">info@messi.com</p>
+            </div>
+            <div class="contactContainer">
+                <p id="contactText" class="contactText">Sigue</p>
+                <div>
                     <a href="https://www.facebook.com/leomessi"><img alt="Facebook" src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0fdef751204647a3bbd7eaa2827ed4f9.png"></a>
                     <a href="https://twitter.com/TeamMessi"><img alt= "Twitter" src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c7d035ba85f6486680c2facedecdcf4d.png"></a>
                     <a href="https://ar.linkedin.com/in/lionel-messi-8300b313a?original_referer=https%3A%2F%2Fwww.google.com%2F"><img alt= "LinkedIn" src="https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6ea5b4a88f0b4f91945b40499aa0af00.png"></a>
                     <a href="https://www.instagram.com/leomessi/"><img alt= "Instagram" src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01c3aff52f2a4dffa526d7a9843d46ea.png"></a>
                 </div>
             </div>
-            <div class="mainText">
-                <h1>Hola</h1>
-                <p style="font-size: 28px; font-weight: 500;">Esto es lo que soy y lo que hago</p>
-                <a class="activeMainTextAnchor" href="http://127.0.0.1:5500/CV/indexmain.html" alt="Curriculum Button">SOBRE MÍ</a>
-                <a href="http://127.0.0.1:5500/CV/indexcv.html" alt="Proyectos Button">CURRICULUM</a>
-                <p style="width: 400px; font-weight:300; margin-top: 30px; letter-spacing: 2px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor neque vitae nisi ultrices consectetur. Praesent congue, enim vehicula dignissim mattis, risus enim auctor tellus, non pretium ligula quam vel ante. Sed pellentesque mollis felis, non sollicitudin tellus luctus sed. Praesent consectetur congue vulputate. In in vestibulum augue. Integer quis molestie felis. Donec ut dapibus nunc. Cras tristique diam eget lectus vehicula rhoncus. Donec at iaculis mauris. Suspendisse augue ex, finibus vitae mattis ac, pellentesque at tortor. </p>
-            </div>
-        </div>
-        <footer>
-            <div class="contactContainer">
-                <p class="contactText">Email</p>
-                <p class="contactInfo">info@messi.com</p>
-            </div>
-            <div class="contactContainer">
-                <p class="contactText">Contacto</p>
-                <p class="contactInfo">932055648</p>
-            </div>
         </footer>
-    </main>
+        <script src="dark-mode-main.js"></script>
 </body>
 </html>
